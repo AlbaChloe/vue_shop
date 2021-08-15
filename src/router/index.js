@@ -8,6 +8,7 @@ import Welcome from '../components/Welcome.vue'
 import Users from '../components/user/Users.vue'
 import Rights from '../components/power/Rights.vue'
 import Roles from '../components/power/Roles.vue'
+import Cate from '../components/goods/Cate.vue'
 
 Vue.use(VueRouter)
 
@@ -44,6 +45,10 @@ const router = new VueRouter({
         { // 权限列表界面
           path: '/roles',
           component: Roles
+        },
+        { // 商品分类页面
+          path: '/categories',
+          component: Cate
         }
       ]
     },
